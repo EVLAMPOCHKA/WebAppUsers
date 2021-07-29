@@ -1,0 +1,21 @@
+﻿@model WebAppUsers.Models.UserModel
+
+<div>
+    <h4>Redistration failed</h4>
+    <h4>Sorry, but the login you entered is already taken</h4>
+    <hr />
+    <dl class="row">
+       
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.name)
+        </dd>
+        
+        
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Back to Registration</a>
+</div>
